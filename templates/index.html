@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Coding Asst</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">&lt;/&gt;</div>
+                <span>Praveen Coding Asst</span>
+            </div>
+            <button class="new-chat" id="newChatBtn"><span>＋</span> New Chat</button>
+            <div class="sidebar-section">
+                <div class="section-title">FILES</div>
+                <label class="side-button upload-button">
+                    <span>📎</span> Upload PDF
+                    <input type="file" id="fileInput" accept=".pdf" hidden>
+                </label>
+                <div id="fileName" class="file-name">No file selected</div>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="model-info">
+                    <div class="status-dot"></div>
+                    <div>
+                        <div class="model-name">Qwen 2.5 Coder</div>
+                        <div class="model-status">Local 4-bit + RAG</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="topbar-title">Praveen Coding Asst</div>
+                <button class="clear-button" id="clearButton">Clear</button>
+            </header>
+
+            <section class="chat-area" id="chatArea">
+                <div class="welcome" id="welcome">
+                    <div class="welcome-icon">&lt;/&gt;</div>
+                    <h1>Welcome to Praveen Coding Asst</h1>
+                    <p>Ask coding questions or upload a PDF to chat with your document in real-time.</p>
+                    <div class="suggestions">
+                        <button class="suggestion" data-question="Explain two pointer approach in Python">
+                            <strong>Python</strong><span>Two pointer approach</span>
+                        </button>
+                        <button class="suggestion" data-question="Explain SQL joins with examples">
+                            <strong>SQL</strong><span>Explain SQL joins</span>
+                        </button>
+                        <button class="suggestion" data-question="Explain binary search in simple words">
+                            <strong>DSA</strong><span>Explain binary search</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="messageInput" rows="1" placeholder="Ask a question or inquire about your uploaded PDF..."></textarea>
+                    <button id="sendButton" class="send-button">➤</button>
+                </div>
+                <div class="input-hint">AI can make mistakes. Verify important code or information.</div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

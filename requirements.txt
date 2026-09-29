@@ -1,0 +1,9 @@
+torch
+transformers>=4.40.0
+accelerate>=0.28.0
+bitsandbytes>=0.46.1
+sentence-transformers>=2.7.0
+pypdf>=4.2.0
+flask>=3.0.0
+flask-cors>=4.0.0
+scikit-learn
